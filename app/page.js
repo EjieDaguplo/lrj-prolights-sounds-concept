@@ -1,6 +1,7 @@
 import LeadForm from "@/components/LeadForm";
 import MoodBeams from "@/components/MoodBeams";
 import Estimator from "@/components/Estimator";
+import Header from "@/components/Header";
 import {
   site,
   services,
@@ -14,22 +15,7 @@ import {
 export default function Home() {
   return (
     <>
-      <header className="top">
-        <div className="wrap bar">
-          <a href="#top" aria-label={site.name}>
-            <img src="/logo.png" alt={site.name} className="logo" />
-          </a>
-          <nav>
-            <a href="#packages">Packages</a>
-            <a href="#estimate">Estimate</a>
-            <a href="#gallery">Gallery</a>
-            <a className="btn solid sm" href="#quote">
-              Get a quote
-            </a>
-          </nav>
-        </div>
-      </header>
-
+      <Header />
       <main id="top">
         <section className="hero">
           <MoodBeams />
